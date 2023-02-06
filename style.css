@@ -1,0 +1,387 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Esta propiedad nospermite cambiar la fuente de los textos */
+}
+
+header {
+    background-color: #000000;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 105px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #4c088c;
+}
+
+main {
+    background-color: #242424;
+}
+
+/* CSS de "productos" */
+
+.servicios {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.servicios li {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    background: #ffffff;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 4px solid #593500;
+        /*  border-color: #ff0000;
+            border-width: 2px;
+            border-style: solid; */
+    border-radius: 10px;
+}
+
+.servicios li:hover {
+    border-color: #c78c19;
+}
+
+.servicios li:active {
+    border-color: #088c19;
+}
+
+.servicios h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.servicios li:hover h2{
+    font-size: 33px;
+}
+
+.descripcion {
+    font-size: 18px;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Aqui termina el CSS de "productos" */
+footer {
+    text-align: center;
+    background: url(imagenes/bg-blanco.jpg);
+    padding: 25px;
+}
+
+.pie {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* Aqui inicia el CSS de "contacto" */
+
+form {
+    width: 940px;
+    padding: 40px 160px;
+}
+
+form label, form legend {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    background-color: #3b3b3b;
+    color: #ffffff;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    border-radius: 5px;
+    border-color: #000000;
+    border-width: 1.5px;
+}
+
+div p {
+    margin-top: 25px;
+}
+
+select {
+    background-color: #3b3b3b;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    background-color: #4e4e4e;
+    color: #ffffff;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.5s all;
+    /* "Transition" se usa para crear una trancision visual de un elemento */
+    cursor: pointer;
+}
+
+.enviar:hover {
+    border-color: #c78c19;
+    transform: scale(1.1);
+    /* "transform: scale(X.X);" sirve para cambiar la "escala" de todas las propiedades de un elemento */
+    /* Utilizamos la propiedad "transform: rotate()"para "rotar" un elemento sobre su eje. */
+}
+
+table {
+    margin: 40px;
+    color: #ffffff;
+}
+
+thead {
+    background: #555555;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #c78c19;
+    padding: 8px 15px;
+}
+
+/* Aui inicel el CSS del "Home" */
+
+.margen {
+    padding-bottom: 1px;
+    background: #101010;
+}
+
+.banner{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.principal {
+    padding: 3em;
+    margin: 0px 170px;
+    padding-bottom: 10px;
+}
+
+.ttlPrincipal {
+    text-align: center;
+    font-size: 2em;
+    /* El "em" es el valor predeterminado que da el navegador a una funcion */
+    margin: 0 0 1em;
+    color: #ffffff;
+    clear: left;
+}
+
+.ttlPrincipal:first-letter {
+    font-weight: bold;
+}
+
+.utencilios {
+    width: 120px;
+    float: left;
+    /* Tanto el "float:left" como el "float:right" sirven para que el elemento se destaque en la pantalla */
+    margin: 20px 20px 20px 0;
+}
+
+.principal p {
+    margin: 0 0 1em;
+    color: #ffffff;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#101010, #2d2d2d);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+    color: #ffffff;
+}
+.ubi {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales {
+    padding: 3em;
+    background: linear-gradient(#2d2d2d,#3a3a3a);
+}
+
+.cont-destacados {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.list-destacados {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 1.5;
+    color: #f6f6f6;
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.items:before {
+    content: "★ ";
+}
+
+.imgDestacados {
+    width: 60%;
+    transition: 500ms;
+    box-shadow: 10px 10px 30px 5px #000000;
+    border-radius: 15px;
+}
+
+.imgDestacados:hover {
+    opacity: 50%;
+}
+
+.video {
+    width: 600px;
+    margin: 20px auto;
+    padding: 3em;
+}
+
+@media screen and (max-width:920px) {
+    .mainProd {
+        padding: 3em 0;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+        text-align: center;
+    }
+    .caja, .principal, .ubi, .cont-destacados, .servicios{
+        width: auto;
+        margin: 0px auto;
+    }
+    .video, .diferenciales {
+        width: auto;
+        padding: 1em;
+    }
+    .list-destacados, .imgDestacados, .input-padron {
+        width: 100%;
+    }
+
+    .servicios li {
+        margin: 1em 1.5%;
+        width: 23%;
+        box-sizing: content-box;
+        padding: 45px 20px;
+    }
+    .imgProductos {
+        width: 100%;
+        margin: 44px 0;
+    }
+
+    form {
+        width: auto;
+    }
+    table {
+        margin: 1em auto;
+    }
+}
+
+@media screen and (max-width:540px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+        text-align: center;
+    }
+    .caja, .principal, .ubi, .cont-destacados, .servicios{
+        width: auto;
+        margin: 0px auto;
+    }
+    .video, .diferenciales {
+        width: auto;
+        padding: 1em;
+    }
+    .list-destacados, .imgDestacados {
+        width: 100%;
+    }
+
+    .mainProd {
+        padding: 0px;
+    }
+    .servicios li {
+        display: block;
+        margin: 1em 1.5%;
+        width: auto;
+    }
+    .imgProductos {
+        width: 100%;
+        margin: 0;
+    }
+    form {
+        width: auto;
+        padding: 30px;
+    }
+    .input-padron {
+        width: 85%;
+    }
+    table {
+        margin: 1em auto;
+    }
+}

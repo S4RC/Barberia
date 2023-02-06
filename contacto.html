@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logo-blanco.png" alt="Logo de la barberia!"></h1>
+            <!-- La propiedad "alt" la usamos para crear una alternativa a las imagenes -->
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="nombrido">Nombre y Apellido</label>
+            <input type="text" id="nombrido" class="input-padron" required>
+            <!-- La propiedad "id" sirve sólo como un identificador para el ítem. Sirve también para que podamos hacer la conexión entre label y el input específico. -->
+
+            <label for="correo">Correo Electronico</label>
+            <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+            <!-- La propieadad "required" hace que sea obligatorio el llenar un campo -->
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+            <!-- La propieda "placeholder" permiente dar un ejemplo de lo que se quiere que sea llenado en el campo este desaparece despues de hbaer escrito algo -->
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
+
+            <fieldset>
+                <legend>¿Como le guastaria ser contactado?</legend>
+                <label for="radio-email"><input name="contacto" type="radio" value="email" id="radio-email">Email</label>
+                
+                <!-- La propiedad "name" solo se puede “completar” una vez, es por eso que, cuando seleccionamos uno de los ítems, se anula el otro, manteniendo solamente uno seleccionado. -->
+                <label for="radio-cel"><input name="contacto" type="radio" value="cel" id="radio-cel">Telefono</label>
+
+                <label for="radio-wath"><input name="contacto" type="radio" value="wath" id="radio-wath" checked>WhatsApp</label>
+                
+            </fieldset>
+
+            <fieldset>
+            <!-- La etiqueta <fieldset> se usa para crear una división en nuestro formulario, con uno o más <input> -->
+                <legend>¿En que horario prefiere ser contactado?</legend>
+                <!-- La etiqueta <legend> la usamos para el título de un grupo de campos en cualquier formulario -->
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+            
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Baraberia?</label>
+            <!-- La propiedad "checked" deja marcada la opcion predeterminadamente -->
+            
+            <input type="submit" value="Enviar datos" class="enviar">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+    </main>
+    <footer>
+        <img src="imagenes/logo.png" alt="Logo de la barberia!">
+        <p class="pie">&copy Copyright Barberia Mamalona - 2023</p>
+    </footer>
+</body>
+</html>
